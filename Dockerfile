@@ -1,11 +1,10 @@
 FROM php:8.5-apache
 
-WORKDIR /var/www
+WORKDIR /var/www/html
 
 COPY docker/000-default.conf /etc/apache2/sites-available/000-default.conf
-COPY public/ /var/www/public/
-COPY src/ /var/www/src/
-COPY tests/ /var/www/tests/
+COPY index.php style.css statick.png favicon.svg Calculator.php /var/www/html/
+COPY tests/ /var/www/html/tests/
 
 RUN chown -R www-data:www-data /var/www \
     && find /var/www -type d -exec chmod 755 {} \; \

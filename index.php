@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once __DIR__ . '/../src/Calculator.php';
+require_once __DIR__ . '/Calculator.php';
 
 $profile = [
     'name' => 'Diego Saavedra',
@@ -90,7 +90,7 @@ function escape(string $value): string
     <meta name="description" content="Web personal y calculadora PHP de Diego Saavedra para Aplicaciones Web.">
     <title>Diego Saavedra | Web personal</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
@@ -106,7 +106,7 @@ function escape(string $value): string
         </nav>
 
         <div class="hero__content">
-            <img class="hero__photo" src="assets/statick.png" alt="Fotografía de Diego Saavedra" width="120" height="120">
+            <img class="hero__photo" src="statick.png" alt="Fotografía de Diego Saavedra" width="120" height="120">
             <p class="eyebrow">Aplicaciones Web · Semana 1</p>
             <h1><?= escape($profile['name']) ?></h1>
             <p class="hero__role"><?= escape($profile['role']) ?></p>

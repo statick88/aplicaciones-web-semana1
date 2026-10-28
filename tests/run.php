@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once __DIR__ . '/../src/Calculator.php';
+require_once __DIR__ . '/../Calculator.php';
 
 $tests = [
     'suma de enteros' => fn (): bool => Calculator::calculate('8', '4', 'add')['result'] === 12.0,
